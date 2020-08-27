@@ -1,0 +1,39 @@
+###26/08/2020
+
+
+##Task1 - Read "Nonadiabatic dynamics within the time dependent density functional theory:Ultrafast photodynamics in pyrazine" by Werner et al.
+#Aim of paper: Treatment of radiationless transitions in Pyrazine involving all degrees of freedom
+#Computational details :
+1) Functionals used - B3LYP
+2) Basis set - Triple zeta valence plus (TZVP)
+3) Software used - Turbomole
+4) Also compared accuracy of TDDFT with highgly correlted EOM-CCSD(T)
+5) Number of states - Ground state + four lowest excited states
+6) \Delta = 0.1 fs , \delta = 1e-5 fs
+7) RK-4 used for integration of electronic time steps
+8) Number of trajectories used - 650
+
+
+##Task2 - TSH discussion with Chakri bhaiya
+1) Path of NWCHEM directory must be specified at the beginning of fssh.py
+2) Number of processors for NWCHEM jobs can be changed in the NWCHEM input file fssh.nw by the user by
+    np_opt np
+    np_norm np
+    np_tddft np
+  np = number of processors, and some(or all) of the above lines can be included in the TSH block of fssh.nw
+3) For running the TSH simulation, we need to type the following command in terminal:
+   python main.py ../input_files/fssh.nw (python main.py PATH-TO-fssh.nw)
+   This runs a single trajectory for now
+   *For parallelisation over trajectories we need to distribute the trajectories (ntraj) in the main.py file to different processes
+4) In the NAC calculation, to interpolate and extrapolate for the first time step, we also calculate the NAC a -\Delta (just for the initial time step) and then we propagate by interpolation and extrapolation of further time steps.
+
+##Task3 - Checking and learning to use the TSH code
+1) Encountered some errors related to specification of NWCHEM path (error - Directory not found)
+2) Changed the NWCHEM path.... but still the same error persist
+3) Tried the command:
+   module load nwchem/7.0
+   and then ran a test H2 calculation (NWCHEM worked)
+   The TSH code also started running. BUt every time I logout, I have to module load nwchem again before running the any tests (*I have to find the correct NWCHEM path and specify that in fssh.py file)
+4) TSH simulation for a trajectory-0 showed error (in interpolation step of NAC calculation) at the 8th time step simulation. (*To be     fixed)
+5) Wrote some lines of code in the fssh.py file to generate an output file and wrtie to it, at each nuclear propagation step, the positions, momentum',Kinetic energy, Potential energy, Density matrices and the current elecronic state.
+(*No precision limit set for the values written in the file -> code must be modified later to do this.)  
