@@ -21,7 +21,7 @@
 ## Additions to the code
 
 - #### Functions added to fssh.py
-  - ##### write_output()
+  - #### write_output()
     - Writes to an output file at each nuclear time step:
       - Positions of atoms
       - Momenta of atoms
@@ -38,7 +38,7 @@
       - Making the density matrix in tabular format
       - The electronic time step
       - Embellishing the output file.
-  - ##### print_output()
+  - #### print_output()
   Same as the write_output() function, but prints out the information to screen at each nuclear time step.
 
 - #### Parallelisation of the main.py function
