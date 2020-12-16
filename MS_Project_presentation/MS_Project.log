@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.26)  17 DEC 2020 02:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.26)  17 DEC 2020 03:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1245,7 +1245,7 @@ Overfull \vbox (2.54271pt too high) detected at line 144
 ] [14
 
 ]
-Overfull \vbox (0.24863pt too high) detected at line 198
+Overfull \vbox (0.24863pt too high) detected at line 200
  []
 
 [15
@@ -1266,11 +1266,11 @@ Overfull \vbox (0.24863pt too high) detected at line 198
 \tf@snm=\write8
 \openout8 = `MS_Project.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
  (./MS_Project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
 Package rerunfilecheck Info: File `MS_Project.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1303,7 +1303,7 @@ urm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm
 7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on MS_Project.pdf (18 pages, 241665 bytes).
+Output written on MS_Project.pdf (18 pages, 241938 bytes).
 PDF statistics:
  201 PDF objects out of 1000 (max. 8388607)
  150 compressed objects within 2 object streams
